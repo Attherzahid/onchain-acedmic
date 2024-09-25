@@ -40,10 +40,14 @@
       max-width: 362px;
       background: rgb(86, 193, 252);
       background: linear-gradient(90deg, rgba(86, 193, 252, 0) 0%, rgba(86, 193, 252, 0.2) 100%);
+      box-shadow: 10px 19px 38px rgba(#000, .25);
       border-radius: 30px;
+      display: flex;
       input {
         background-color: transparent;
         border: none;
+        width: 100%;
+        color: white;
         &:focus {
           border: none;
           outline: none;
@@ -55,8 +59,20 @@
       }
     }
     .profile-wrapper {
-      .profile-pic {
-        mask-image: url('./../../img/profile-clip.png');
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      .profile-img-wrapper {
+        padding: 2px;
+        background-image: url('./assets/img/profile-img-bg.webp');
+        background-size: 100% 100%;
+        .profile-pic {
+          mask-image: url('./assets/img/profile-clip.png');
+          width: 42px;
+          height: 37px;
+          object-fit: cover;
+          object-position: center;
+        }
       }
     }
   }

@@ -1,6 +1,10 @@
 @import "./assets/scss/base/base";
 @import "./assets/scss/components/all_components";
 
+.main {
+  margin-top: 96px;
+}
+
 .custom-border {
   position: absolute;
   top: 0;
@@ -38,8 +42,9 @@
   position: absolute;
   background: rgb(68, 156, 242);
   background: linear-gradient(120deg, rgba(68, 156, 242, 1) 0%, rgba(68, 152, 242, 1) 59%, rgba(61, 66, 238, 1) 100%);
-  filter: blur(400px);
+  filter: blur(180px);
   pointer-events: none;
+  opacity: .5;
 
   &.obj-1 {
     left: calc(50% + 306px);
@@ -160,7 +165,7 @@
 }
 
 .pb-0 {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 .gap-1 {

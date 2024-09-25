@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/css/slick/slick.css">
     <link rel="stylesheet" href="./theme_styles.css">
     <link rel="stylesheet" href="./assets/css/home.css">
     <title>Document</title>
@@ -25,12 +27,15 @@
                         </ul>
                         <div class="searchbar-wrapper">
                             <input type="text" placeholder="Busca tu contenido">
+                            <img src="./assets/img/icons/search-icon.svg" alt="search-icon">
                             <div class="custom-border"></div>
                         </div>
                     </div>
                     <div class="profile-wrapper">
-                        <span class="d-block text-white">Alan Jurek</span>
-                        <img src="./assets/img/dummy-user.webp" alt="profile-pic" class="profile-pic" width="42" height="42">
+                        <span class="d-block text-white font-abel">Alan Jurek</span>
+                        <div class="profile-img-wrapper">
+                            <img src="./assets/img/dummy-user.webp" alt="profile-pic" class="profile-pic" width="42" height="42">
+                        </div>
                     </div>
                     <button class='menu-toggler' type='button'>
                     </button>
@@ -38,12 +43,49 @@
             </div>
         </header>
         <main class="main">
-            <section class="hero-sec">
+            <section class="hero-sec pb-0">
+                <div class="container">
+                    <div class="hero-slider single-slider single">
+                        <a href="#" class="slider-item">
+                            <img src="./assets/img/dummy-hero-slide.webp" alt="slider-img" class="slider-img img-fluid" width="1276" height="526">
+                        </a>
+                        <a href="#" class="slider-item">
+                            <img src="./assets/img/dummy-hero-slide.webp" alt="slider-img" class="slider-img img-fluid" width="1276" height="526">
+                        </a>
+                    </div>
+                </div>
                 <div class="obj obj-1"></div>
                 <div class="obj obj-2"></div>
             </section>
+            <section class="default-sec courses-sec">
+                <div class="container">
+                    <h2 class="main-title mb-1">cursos</h2>
+                    <p>Descubre nuevas habilidades web3 gracias a expertos</p>
+                    <div class="multiple-slider multiple">
+                        <div class="slider-item">
+                            <img src="./assets/img/dummy-course.webp" alt="course-thumbnail" class="slider-img img-fluid">
+                            <span class="d-block fs-20" style="text-transform: uppercase;">entrepreneur fit</span>
+                            <div class="d-flex align-items-center gap-2 flex-wrap">
+                                <div class="d-flex align-items-center" style="gap: 6px;">
+                                    <img src="./assets/img/icons/person.svg" alt="person-img" width="12" height="12">
+                                    <a href="" class="text-skyblue">Nate Belmar</a>
+                                </div>
+                                <div class="d-flex align-items-center" style="gap: 6px;">
+                                    <img src="./assets/img/icons/lesson.svg" alt="person-img" width="13" height="13">
+                                    <a href="" class="text-skyblue"><span>25</span> Lessons</a>
+                                </div>
+                            </div>
+                            <p class="">Entrepreneur Fit is a no BS direct approach to the necessary philosophical principles that govern the journey of fitness...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/custom.js"></script>
 </body>
 
 </html>
