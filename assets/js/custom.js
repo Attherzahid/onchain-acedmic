@@ -34,4 +34,25 @@ jQuery(document).ready(function ($) {
       }
     ]
   });
+  $('.three-slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });

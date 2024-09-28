@@ -14,6 +14,9 @@
       display: none;
       background-color: transparent;
     }
+    .searchbar-main-wrapper {
+      max-width: 862px;
+    }
     .menu {
       display: flex;
       gap: clamp(20px, 5vw, 40px);
@@ -48,6 +51,7 @@
         border: none;
         width: 100%;
         color: white;
+        transition: .5s;
         &:focus {
           border: none;
           outline: none;
@@ -70,6 +74,8 @@
           mask-image: url('./assets/img/profile-clip.png');
           width: 42px;
           height: 37px;
+          min-width: 42px;
+          min-height: 37px;
           object-fit: cover;
           object-position: center;
         }
@@ -78,13 +84,26 @@
   }
 }
 
+@media (max-width: 1301px) {
+  .header{
+    .navbar {
+      .searchbar-main-wrapper {
+        max-width: 740px;
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .header {
+    padding: 10px 0;
     &.active {
       background-color: #161b22d6;
     }
     .navbar {
-      padding: 10px 0;
+      .searchbar-main-wrapper {
+        max-width: 500px;
+      }
       .menu {
         position: absolute;
         top: 100%;
@@ -106,9 +125,9 @@
           align-items: start;
         }
       }
-      .menu-toggler {
-        display: block;
-      }
+      // .menu-toggler {
+      //   display: block;
+      // }
     }
   }
 }
@@ -116,6 +135,25 @@
 @media (max-width: 767px) {
   .header {
     .navbar {
+      gap: 10px;
+      .searchbar-main-wrapper {
+        .searchbar-wrapper {
+          padding: 12px;
+          max-width: unset;
+          width: unset;
+          justify-content: end;
+          transition: .5s;
+          &:hover {
+            input {
+              padding: 0;
+              max-width: calc(100% - 22px);
+            }
+          }
+          input {
+            max-width: 0;
+          }
+        }
+      }
       .menu {
         li {
           max-width: 540px;

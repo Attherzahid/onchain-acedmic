@@ -205,7 +205,9 @@
 .round-12 {
   border-radius: 12px;
 }
-
+.round-20 {
+  border-radius: 20px;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -241,8 +243,24 @@
   }
 }
 
+.card {
+  padding: clamp(26px, 7vw, 54px) clamp(20px, 7vw, 44px);
+  background-color: var(--blue-dark);
+}
+
 @media (min-width: 991px) {
   .flex-lg-row {
     flex-direction: row;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    margin-top: 78px;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    margin-top: 73px;
   }
 }
