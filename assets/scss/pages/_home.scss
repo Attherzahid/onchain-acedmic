@@ -134,6 +134,12 @@
 .hero-sec {
     padding: clamp(45px, 7vw, 60px) 0;
 }
+.single-slider-sec {
+    .slider-img,
+    .custom-border {
+        border-radius: 20px;
+    }
+}
 .recomended-sec {
     .obj {
         &.obj-1 {
@@ -173,6 +179,12 @@
     }
 }
 @media (max-width: 576px) {
+    .single-slider-sec {
+        .slider-img,
+        .custom-border {
+            border-radius: 12px;
+        }
+    }
     .slick-slider {
         &.multiple {
             .slick-slide {
